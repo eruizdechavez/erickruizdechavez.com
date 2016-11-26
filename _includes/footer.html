@@ -5,17 +5,17 @@
         <p>{{ site.description | escape }}</p>
 
         <ul class="social-media-list">
-          {% if site.twitter_username %}
-            <li>
-              {% include icon-twitter.html username=site.twitter_username %}
-            </li>
-          {% endif %}
+          <li>
+            {% include icon-twitter.html username=site.twitter_username %}
+          </li>
 
-          {% if site.github_username %}
-            <li>
-              {% include icon-github.html username=site.github_username %}
-            </li>
-          {% endif %}
+          <li>
+            {% include icon-github.html username=site.github_username %}
+          </li>
+
+          <li>
+            {% include email.html %}
+          </li>
         </ul>
 
         <p class="rss-subscribe">Suscribirse <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>

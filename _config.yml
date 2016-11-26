@@ -17,9 +17,10 @@ title: Erick Ruiz de Chavez
 email: eruizdechavez@fastmail.com
 description: Programador Web, Pragmático, Minimalista
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://erickruizdechavez.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: https://erickruizdechavez.com # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: eruizdechavez
 github_username:  eruizdechavez
+github_projectname:  erickruizdechavez.com
 lang: es-MX
 
 # Build settings

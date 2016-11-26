@@ -50,7 +50,7 @@ kill_servers() {
 run_servers() {
   kill_servers
 
-  bundle exec jekyll liveserver --config _config.yml,_local.yml &
+  bundle exec jekyll liveserver --config _config.yml,_local.yml --future --drafts &
 
   if [ $OPEN == true ]; then
     sleep 2
