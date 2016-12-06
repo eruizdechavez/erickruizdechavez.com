@@ -51,7 +51,7 @@ Entre las herramientas que nos provee Ember encontramos:
 
 ## En resumen
 
-Ember es mas que un framework, es toda una colección de herramientas y recursos para dejar las distracciones de lado y enfocarnos en lo importante: nuestro trabajo. A primera vista puede parecer algo intimidante, pero si le damos la oportunidad, rápidamente estaremos preguntándonos _**como es que pude trabajar antes sin Ember!**_.
+Ember es mas que un framework, es toda una colección de herramientas y recursos para dejar las distracciones de lado y enfocarnos en lo importante: nuestro trabajo. A primera vista puede parecer algo intimidante, pero si le damos la oportunidad, rápidamente estaremos preguntándonos _**¡Cómo es que pude trabajar antes sin Ember!**_.
 
 <br/>
 
