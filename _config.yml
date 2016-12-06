@@ -18,11 +18,12 @@ email: eruizdechavez@fastmail.com
 description: Programador Web, Pragmático, Minimalista
 baseurl: "" # the subpath of your site, e.g. /blog
 url: https://erickruizdechavez.com # the base hostname & protocol for your site, e.g. http://example.com
+lang: es-MX
+excerpt_separator: <!--more-->
+google_analytics: UA-88013265-1
 twitter_username: eruizdechavez
 github_username:  eruizdechavez
 github_projectname:  erickruizdechavez.com
-lang: es-MX
-google_analytics: UA-88013265-1
 
 # Build settings
 markdown: kramdown
