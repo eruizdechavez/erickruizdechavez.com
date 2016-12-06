@@ -1,5 +1,7 @@
 # erickruizdechavez.com
 
+[![Ready](https://badge.waffle.io/eruizdechavez/erickruizdechavez.com.svg?label=ready&title=Ready)](http://waffle.io/eruizdechavez/erickruizdechavez.com) [![In Progress](https://badge.waffle.io/eruizdechavez/erickruizdechavez.com.svg?label=in%20progress&title=In%20Progress)](http://waffle.io/eruizdechavez/erickruizdechavez.com)
+
 ## Erick Ruiz de Chavez
 
 Programador Web desde 2005, disfrutaba de las delicias de IE6 hasta que llegaron los aguafiestas de Firefox y Chrome. Felizmente casado desde el 2010.
