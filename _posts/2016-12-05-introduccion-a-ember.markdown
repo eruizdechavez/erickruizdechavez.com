@@ -12,6 +12,8 @@ Este eslogan podría darnos la impresión de que Ember esta enfocado exclusivame
 
 <!--more-->
 
+![Logo de Ember](/assets/ember-logo.png)
+
 Ember consiste no solamente en un framework, sino en todo un conjunto de herramientas cuyos objetivos principales son:
 
 1. Reducir la cantidad de código que debe ser escrita para conseguir resultados
@@ -51,9 +53,13 @@ Entre las herramientas que nos provee Ember encontramos:
 
 Ember es mas que un framework, es toda una colección de herramientas y recursos para dejar las distracciones de lado y enfocarnos en lo importante: nuestro trabajo. A primera vista puede parecer algo intimidante, pero si le damos la oportunidad, rápidamente estaremos preguntándonos _**como es que pude trabajar antes sin Ember!**_.
 
+<br/>
+
 ---
+
+<br/>
 
 **Referencias**
 
-- "Ember.Js: A Framework For Creating Ambitious Web Applications.". Emberjs.Com, 2016, http://emberjs.com.
-- "Ember.Js - Getting Started: Quick Start". Guides.Emberjs.Com, 2016, https://guides.emberjs.com/v2.10.0/getting-started/quick-start/.
+- "Ember.Js: A Framework For Creating Ambitious Web Applications.". Emberjs.Com, 2016, [http://emberjs.com](http://emberjs.com).
+- "Ember.Js - Getting Started: Quick Start". Guides.Emberjs.Com, 2016, [https://guides.emberjs.com/v2.10.0/getting-started/quick-start/](https://guides.emberjs.com/v2.10.0/getting-started/quick-start/).
