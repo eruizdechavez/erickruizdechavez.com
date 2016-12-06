@@ -30,14 +30,14 @@ El ciclo de actualización de Ember dura 6 semanas, en las cuales podremos encon
 
 Una de las cosas que mas me ha gustado trabajar *al modo Ember* es lo que se conoce como *Convention over Configuration*, Convención antes que Configuración, esto es, si seguimos el estándar (la convención) no tenemos que configurar nada y todo funciona *automagicamente*.
 
-Otro de mis favoritos de Ember es el CLI, una súper herramienta de linea de comando que requiere 0 configuración y con la que podemos hacer de todo lo que se necesite, desde generar un nuevo proyecto hasta compilar y liberar nuestro código a producción. No por nada todos los frameworks están empezando a seguir el mismo estilo.
+Otro de mis favoritos de Ember es el CLI, una robusta línea de comando que requiere 0 configuración y con la que podemos hacer de todo lo que se necesite, desde generar un nuevo proyecto hasta compilar y liberar nuestro código a producción. No por nada todos los frameworks están empezando a seguir el mismo estilo.
 
 ## Herramientas que nos provee Ember
 
 Entre las herramientas que nos provee Ember encontramos:
 
 - Una extensa API con Objetos, Funciones, y Abstracciones para nuestro trabajo diario
-- Una completa herramienta de linea de comando que incluye:
+- Una robusta línea de comando que incluye:
   - Administrador de archivos, incluyendo versionador, concatenador y minificador
   - Generadores de código, incluidos controladores, rutas, modelos, etc
   - Estructura de proyecto estandarizada para facilitar en integrarse a nuevos proyectos basados en Ember
@@ -47,7 +47,7 @@ Entre las herramientas que nos provee Ember encontramos:
   - La habilidad de utilizar todo un ecosistema de de add-ons para extender nuestro proyecto y el mismo CLI
 - Una completa abstracción de datos para integrarse con diferentes estilos de servicios, el cual a diferencia de la creencia popular no nos obliga a usar Ruby on Rails.
 - Una extensión para Chrome y Firefox con la cual podemos inspeccionar a detalle cada una de las partes de nuestra aplicación.
-- Una enorme comunidad en linea dispuesta a ayudar y solucionar nuestras dudas, sin importar si somos principiantes o expertos.
+- Una enorme comunidad en línea dispuesta a ayudar y solucionar nuestras dudas, sin importar si somos principiantes o expertos.
 
 ## En resumen
 
