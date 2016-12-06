@@ -5,7 +5,7 @@ layout: post
 
 En su pagina oficial, Ember se define como:
 
-> *A framework for creating **ambitious** web applications*
+> *A framework for creating **ambitious** web applications* <br/>
 > Un framework para crear aplicaciones web **ambiciosas**
 
 Este eslogan podría darnos la impresión de que Ember esta enfocado exclusivamente a aplicaciones web grandes, pero en mi opinión casi cualquier aplicación web debería considerarse una aplicación ambiciosa, esto es, con deseos y miras al éxito.
