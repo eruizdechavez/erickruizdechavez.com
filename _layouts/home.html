@@ -1,26 +1,23 @@
 ---
 layout: default
 ---
-<section class="article-list">
-  <h2 class="article-list__title">Artículos</h2>
-  
-  {% for post in site.posts %}
-    <!-- Articulo -->
-    <article class="article">
-      <header class="article__header">
-        <h3 class="article__title">{{ post.title }}</h3>
-        <address class="article__author">
-          Escrito por {{ post.author }}, el <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{% include translated_date.html date=post.date %}</time>
-        </address>
-      </header>
-      {% if post.excerpt %}
-        <section class="article__content">
-          {{ post.excerpt }}
-        </section>
-      {% endif %}
-      <footer class="article__footer">
-        <a class="article__read-more" href="{{ post.url | relative_url }}">Leer artículo completo</a>
-      </footer>
-    </article>
-  {% endfor %}
-</section>
+<h2 class="article-list__title">Artículos</h2>
+
+{% for post in site.posts %}
+  <section class="article">
+    <header class="article__header">
+      <h3 class="article__title">{{ post.title }}</h3>
+      <address class="article__author">
+        Escrito por {{ post.author }}, el <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{% include translated_date.html date=post.date %}</time>
+      </address>
+    </header>
+    {% if post.excerpt %}
+      <section class="article__content">
+        {{ post.excerpt }}
+      </section>
+    {% endif %}
+    <footer class="article__footer">
+      <a class="article__read-more" href="{{ post.url | relative_url }}">Leer artículo completo</a>
+    </footer>
+  </section>
+{% endfor %}
