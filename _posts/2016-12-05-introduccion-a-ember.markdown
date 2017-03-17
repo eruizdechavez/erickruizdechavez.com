@@ -20,7 +20,7 @@ Este eslogan podría darnos la impresión de que Ember esta enfocado exclusivame
 
 <!--more-->
 
-![Logo de Ember]({% link assets/ember-logo.png %})
+![Logo de Ember]({{ site.url }}{{ site.baseurl }}{% link assets/ember-logo.png %})
 
 Ember consiste no solamente en un framework, sino en todo un conjunto de herramientas cuyos objetivos principales son:
 

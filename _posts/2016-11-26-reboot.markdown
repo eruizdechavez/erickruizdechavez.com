@@ -6,7 +6,7 @@ Este (como algunos sabrán) no es mi primer blog. Tampoco es mi primer sitio per
 
 <!--more-->
 
-[![Imagen de la caricatura ReBoot]({% link assets/reboot.jpg %} "https://en.wikipedia.org/wiki/ReBoot")](https://en.wikipedia.org/wiki/ReBoot)
+[![Imagen de la caricatura ReBoot]({{ site.url }}{{ site.baseurl }}{% link assets/reboot.jpg %} "https://en.wikipedia.org/wiki/ReBoot")](https://en.wikipedia.org/wiki/ReBoot)
 
 Esta edición no es la excepción, y los motivos detrás de el están muy bien definidos (o al menos eso pretendo). Estos son:
 
