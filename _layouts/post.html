@@ -1,18 +1,27 @@
 ---
 layout: default
 ---
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-
-  <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
-    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | localize: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
+<article class="page">
+  <header class="post__header">
+    <h2 class="post__title">{{ page.title }}</h2>
+    <address class="post__author">
+      Escrito por {{ page.author }}, el <time datetime="{{ page.date | date: "%Y-%m-%d" }}">{% include translated_date.html date=page.date %}</time>
+    </address>
   </header>
-
-  <div class="post-content" itemprop="articleBody">
+  <section class="post__content">
     {{ content }}
-  </div>
-
-  {% if site.disqus.shortname %}
-    {% include disqus_comments.html %}
-  {% endif %}
+  </section>
+  <footer class="post__footer">
+    {% if page.references %}
+      <section class="post__references">
+        <hr>
+        <h2>Referencias:</h2>
+        <ul>
+          {% for reference in page.references%}
+            <li>"{{reference.title}}", <a href="{{ reference.link }}">{{ reference.source }}</a>, <time datetime="{{ reference.date }}">{{ reference.date }}</time></li>
+          {% endfor %}
+        </ul>
+      </section>
+    {% endif %}
+  </footer>
 </article>

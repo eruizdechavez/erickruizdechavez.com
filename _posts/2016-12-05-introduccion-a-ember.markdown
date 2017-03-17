@@ -1,6 +1,14 @@
 ---
-title: Introduccion a Ember
-layout: post
+title: Introducción a Ember
+references:
+  - title: Ember.js&#58; A Framework For Creating Ambitious Web Applications
+    source: emberjs.com
+    date: 2016
+    link: http://emberjs.com
+  - title: Ember.js - Getting Started&#58; Quick Start
+    source: guides.gmberjs.com
+    date: 2016
+    link: https://guides.emberjs.com/v2.10.0/getting-started/quick-start/
 ---
 
 En su pagina oficial, Ember se define como:
@@ -12,7 +20,7 @@ Este eslogan podría darnos la impresión de que Ember esta enfocado exclusivame
 
 <!--more-->
 
-![Logo de Ember]({{site.url}}{{site.baseurl}}/assets/ember-logo.png)
+![Logo de Ember]({% link assets/ember-logo.png %})
 
 Ember consiste no solamente en un framework, sino en todo un conjunto de herramientas cuyos objetivos principales son:
 
@@ -53,13 +61,3 @@ Entre las herramientas que nos provee Ember encontramos:
 
 Ember es mas que un framework, es toda una colección de herramientas y recursos para dejar las distracciones de lado y enfocarnos en lo importante: nuestro trabajo. A primera vista puede parecer algo intimidante, pero si le damos la oportunidad, rápidamente estaremos preguntándonos _**¡Cómo es que pude trabajar antes sin Ember!**_.
 
-<br/>
-
----
-
-<br/>
-
-**Referencias**
-
-- "Ember.Js: A Framework For Creating Ambitious Web Applications.". Emberjs.Com, 2016, [http://emberjs.com](http://emberjs.com).
-- "Ember.Js - Getting Started: Quick Start". Guides.Emberjs.Com, 2016, [https://guides.emberjs.com/v2.10.0/getting-started/quick-start/](https://guides.emberjs.com/v2.10.0/getting-started/quick-start/).

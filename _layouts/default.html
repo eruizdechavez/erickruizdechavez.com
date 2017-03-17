@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body>
+    <header class="header">
+      <h1 class="header__title">{{ site.title }}</h1>
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          {% assign sorted_pages = site.pages | reverse %}
+          {% for page in sorted_pages %}
+            {% if page.title %}
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="{{ page.url | relative_url }}">
+                  {{ page.title }}
+                </a>
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </nav>
+    </header>
+    
+    <hr>
+    
+    {{ content }}
+    
+    <!-- Footer  -->
+    <footer class="footer">
+
+    </footer>
+  </body>
+</html>

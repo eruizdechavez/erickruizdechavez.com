@@ -1,8 +1,71 @@
 ---
 ---
 
-@import "minima";
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  margin: auto;
+  max-width: 700px;
+  padding: 20px;
+}
 
-.footer-col-0 {
-  width: 100%;
+a {
+  border-bottom-style: dotted;
+  border-bottom-width: 1px;
+  text-decoration: none;
+}
+
+hr {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+img {
+  display: block;
+  margin: auto;
+  max-width: 400px;
+  padding: 20px;
+}
+
+li {
+  padding-bottom: 5px;
+}
+
+.article {
+  margin: 20px 0;
+  
+  &__author {
+    font-size: .85em;
+    opacity: .5;
+  }
+}
+
+.footer {
+  margin-top: 50px;
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  
+  &__title {
+    flex-grow: 1;
+    margin-top: 0;
+  }
+  
+  &__nav-list {
+    list-style: none;
+  }
+
+  &__nav-item {
+    text-align: right;
+  }
+}
+
+.post {
+  &__references {
+    margin: 50px 0;
+  }
 }

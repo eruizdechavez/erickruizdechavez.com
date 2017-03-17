@@ -1,13 +1,12 @@
 ---
 title: Reboot!
-layout: post
 ---
 
 Este (como algunos sabrán) no es mi primer blog. Tampoco es mi primer sitio personal. Mucho menos mi primer sitio Jekyll. He tenido varios intentos, algunos con mejores resultados (y contenido) que otros. Los motivos para iniciarlos han sido tan diferentes como los motivos para cerrarlos o abandonarlos.
 
 <!--more-->
 
-[![Imagen de la caricatura ReBoot]({{site.url}}{{site.baseurl}}/assets/reboot.jpg "https://en.wikipedia.org/wiki/ReBoot")](https://en.wikipedia.org/wiki/ReBoot)
+[![Imagen de la caricatura ReBoot]({% link assets/reboot.jpg %} "https://en.wikipedia.org/wiki/ReBoot")](https://en.wikipedia.org/wiki/ReBoot)
 
 Esta edición no es la excepción, y los motivos detrás de el están muy bien definidos (o al menos eso pretendo). Estos son:
 
@@ -18,10 +17,4 @@ Aunque los temas se centraran principalmente en las tecnologías en las que he t
 
 En esta edición estaré mucho mas abierto a colaboraciones e ideas de contenido nuevo, así que si tienes propuestas, no dudes en hacérmelas llegar.
 
-Para estar en contacto conmigo existen diferentes formas:
-
-- **Twitter** ( [@eruizdechavez](https://twitter.com/{{ site.twitter_username }}) ): Para comentarios generales, dudas rápidas o simplemente decir "hola!"
-
-- **GitHub** ( [@eruizdechavez](https://github.com/{{ site.github_username }}/{{ site.github_projectname }}/issues) ): Para reportar problemas con el blog, contibuir con articulos y/o sugerir ideas para articulos.
-
-- **Email** ( {% include email.html %} ): Para preguntas en general que no caben en 140 caracteres siempre estoy abierto a recibir y responder a los correos que me lleguen.
+{% include contacto.markdown %}
