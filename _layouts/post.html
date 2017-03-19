@@ -24,7 +24,7 @@ layout: default
       </section>
     {% endif %}
       <section class="post__comments">
-        ¿Tienes algún comentario, o sugerencia? ¿Encontraste algún problema en el articulo? No dudes en reportarlo <a href="https://github.com/{{ site.github_username }}/{{ site.github_projectname }}/issues/new?title={{ page.title | uri_escape }}">haciendo click aquí </a>
+        ¿Tienes algún comentario, o sugerencia? ¿Encontraste algún problema en el articulo? No dudes en reportarlo <a href="https://github.com/{{ site.github_username }}/{{ site.github_projectname }}/issues/new?title={{ page.title | uri_escape }}body={{ "Escribe aquí tu pregunta, comentario o issue...". | uri_escape }}&labels[]=question">haciendo click aquí </a>
       </section>
   </footer>
 </article>
