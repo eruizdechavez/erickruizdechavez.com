@@ -50,7 +50,7 @@ kill_servers() {
 run_servers() {
   kill_servers
 
-  bundle exec jekyll liveserver --config _config.yml,_ipad.yml --future --drafts &
+  jekyll server --config _config.yml,_ipad.yml --future --drafts &
 }
 
 if [ $KILL == true ]; then
