@@ -50,12 +50,7 @@ kill_servers() {
 run_servers() {
   kill_servers
 
-  bundle exec jekyll liveserver --config _config.yml,_local.yml --future --drafts &
-
-  if [ $OPEN == true ]; then
-    sleep 2
-    open 'http://localhost:4000/'
-  fi
+  bundle exec jekyll liveserver --config _config.yml,_ipad.yml --future --drafts &
 }
 
 if [ $KILL == true ]; then
