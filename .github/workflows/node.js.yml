@@ -31,5 +31,6 @@ jobs:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
-        source: "_site/*,_site/*.*"
+        source: "_site"
         target: "/home/${{ secrets.USERNAME }}/beta.erickruizdechavez.com"
+        strip_components: 1
