@@ -1,0 +1,20 @@
+---
+title: Blog
+---
+<header>
+  <h1>{{ title }}</h1>
+</header>
+
+{% from "macros.njk" import excerpt %}
+
+{% for dateStr, items in collections.archive %}
+<section>
+  <header>
+    <h2>{{ dateStr }}</h2>
+  </header>
+
+  {% for post in items %}
+  {{ excerpt(post) }}
+  {% endfor %}
+</section>
+{% endfor %}

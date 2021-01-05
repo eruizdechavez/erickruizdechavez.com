@@ -1,0 +1,9 @@
+{
+  "layout": "default",
+  "permalink": "/{{ title | slug }}/",
+  "eleventyExcludeFromCollections": true,
+  "site": {
+    "name": "Erick Ruiz de Chavez",
+    "tagline": "Web Developer, Podcaster, Pragmatist, Minimalist"
+  }
+}

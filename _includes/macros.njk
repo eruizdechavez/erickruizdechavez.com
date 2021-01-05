@@ -1,0 +1,31 @@
+{% macro languagePill(lang = "en") %}
+<span class="bg-gray-300 text-gray-500 dark:bg-gray-600 dark:text-gray-400  text-xs rounded-full border-black px-1 cursor-default" title="{{ "Español" if lang === "es" else "English" }}">{{ lang }}</span>
+{% endmacro %}
+
+{% macro excerpt(post) %}
+<article>
+  <header class="flex items-baseline">
+    <h3>
+      {{ post.data.title }}
+    </h3>
+    <div class="ml-4 hidden md:block">
+      {% if post.data.lang === "es" %}
+        {{ languagePill("es") }}
+      {% else %}
+        {{ languagePill("en") }}
+      {% endif %}
+      {% if post.data.alt.lang === "es" %}
+        {{ languagePill("es") }}
+      {% elif post.data.alt.lang === "en" %}
+        {{ languagePill("en") }}
+      {% endif %}
+    </div>
+  </header>
+
+  {{ post.templateContent | striptags(true) | truncate | safe }}
+
+  <footer class="mt-2">
+    <a class="text-sm italic" href="{{ post.url | url }}">Read more</a>
+  </footer>
+</article>
+{% endmacro %}

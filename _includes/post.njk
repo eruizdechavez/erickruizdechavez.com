@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+<header class="mb-8">
+  <h1>{{ title }}</h1>
+
+  <div class="text-sm italic">
+    <time datetime="{{ page.date.toISOString() }}">{{ page.date | dateFormat }}</time>
+  </div>
+
+  {% if tags %}
+  <div class="text-sm italic mt-2">
+  {% for tag in tags %}
+    <a href="/tags/{{tag}}">#{{tag}}</a>
+  {% endfor %}
+  </div>
+  {% endif %}
+
+  {% if alt.lang and alt.link %}
+  <div class="text-sm italic mt-2">
+    {% if alt.lang === "es" %}
+      Este post también esta disponible en <a href="{{ alt.link }}">Español</a>.
+    {% else %}
+      This post is also available in <a href="{{ alt.link }}">English</a>.
+    {% endif %}
+  </div>
+  {% endif %}
+</header>
+
+{{ content | safe }}

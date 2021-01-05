@@ -1,0 +1,18 @@
+---
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+permalink: /tags/{{ tag }}/
+---
+<header>
+  <h1>Tagged "#{{ tag }}"</h1>
+</header>
+
+{% set taglist = collections[ tag ] %}
+
+{% from "macros.njk" import excerpt %}
+
+{% for post in taglist | reverse %}
+{{ excerpt(post) }}
+{% endfor %}
