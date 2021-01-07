@@ -1,0 +1,27 @@
+name: Build and Deploy Staging Site
+
+on:
+  push:
+    branches:
+      - develop
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: setup node
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14.x
+      - run: npm ci
+      - run: npm run build --if-present
+      - name: deploy site
+        uses: appleboy/scp-action@v0.1.1
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          source: "_site"
+          target: "/home/${{ secrets.USERNAME }}/beta.erickruizdechavez.com"
+          strip_components: 1

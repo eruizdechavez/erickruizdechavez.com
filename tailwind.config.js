@@ -4,7 +4,7 @@ const colors = require("tailwindcss/colors");
 // https://github.com/tailwindlabs/tailwindcss-typography/issues/69#issuecomment-752946920
 
 module.exports = {
-  purge: ["_includes/**/*.njk", "_includes/**/*.css"],
+  purge: ["_includes/**/*.njk", "_content/**/*.njk", "_includes/**/*.css"],
   darkMode: "media",
   theme: {
     extend: {

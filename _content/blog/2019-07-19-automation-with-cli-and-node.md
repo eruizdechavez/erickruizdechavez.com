@@ -23,11 +23,11 @@ The first step was to manually do what I needed to do, but not the usual repetit
 
 My first automated take at this was to use [Keyboard Maestro](https://www.keyboardmaestro.com/main/). I was able to automate Safari to open a new tab, go to the URL I needed, using JavaScript get the information I needed from the website and show a notification and put it on the clipboard so I could paste it later on another place.
 
-[<img loading="lazy" src="https://erickruizdechavez.com/wp-content/uploads/2019/07/Image-7-19-19-at-9.47-AM-130x300.jpg" alt="" width="130" height="300" class="aligncenter size-medium wp-image-154" srcset="https://erickruizdechavez.com/wp-content/uploads/2019/07/Image-7-19-19-at-9.47-AM-130x300.jpg 130w, https://erickruizdechavez.com/wp-content/uploads/2019/07/Image-7-19-19-at-9.47-AM-443x1024.jpg 443w, https://erickruizdechavez.com/wp-content/uploads/2019/07/Image-7-19-19-at-9.47-AM.jpg 737w" sizes="(max-width: 130px) 100vw, 130px" />](https://erickruizdechavez.com/wp-content/uploads/2019/07/Image-7-19-19-at-9.47-AM.jpg)
+[![](/images/Image-7-19-19-at-9.47-AM.jpg)](/images/Image-7-19-19-at-9.47-AM.jpg)
 
 And when run, it looks like this:
 
-[<img loading="lazy" src="https://erickruizdechavez.com/wp-content/uploads/2019/07/Screen-Shot-2019-07-19-at-10.10.29-AM-300x103.png" alt="" width="300" height="103" class="aligncenter size-medium wp-image-156" srcset="https://erickruizdechavez.com/wp-content/uploads/2019/07/Screen-Shot-2019-07-19-at-10.10.29-AM-300x103.png 300w, https://erickruizdechavez.com/wp-content/uploads/2019/07/Screen-Shot-2019-07-19-at-10.10.29-AM.png 531w" sizes="(max-width: 300px) 100vw, 300px" />](https://erickruizdechavez.com/wp-content/uploads/2019/07/Screen-Shot-2019-07-19-at-10.10.29-AM.png)
+[![](/images/Screen-Shot-2019-07-19-at-10.10.29-AM.png)](/images/Screen-Shot-2019-07-19-at-10.10.29-AM.png)
 
 After some testing and a couple of real-life uses, I noticed one thing. I do not need to authenticate to this page to grab the information, so I do not need Safari (or KM).
 

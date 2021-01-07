@@ -1,8 +1,9 @@
-name: Build and Deploy site
+name: Build and Deploy Production Site
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main
 
 jobs:
   build:
@@ -22,5 +23,5 @@ jobs:
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
           source: "_site"
-          target: "/home/${{ secrets.USERNAME }}/beta.erickruizdechavez.com"
+          target: "/home/${{ secrets.USERNAME }}/erickruizdechavez.com"
           strip_components: 1
