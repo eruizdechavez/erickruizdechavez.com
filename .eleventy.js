@@ -1,5 +1,6 @@
 const pluginTailwindCSS = require("eleventy-plugin-tailwindcss");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
+const cacheBuster = require('@mightyplow/eleventy-plugin-cache-buster');
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginTailwindCSS, {
@@ -8,6 +9,15 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addPlugin(pluginRss);
+
+  const cacheBusterOptions = {
+    createResourceHash() {
+      return Date.now();
+    },
+   // outputDirectory: "_site",
+  };
+
+  eleventyConfig.addPlugin(cacheBuster(cacheBusterOptions));
 
   eleventyConfig.addCollection("archive", (collectionApi) => {
     const formatter = new Intl.DateTimeFormat("en-US", {
