@@ -3,6 +3,8 @@ const pluginRss = require("@11ty/eleventy-plugin-rss");
 const cacheBuster = require('@mightyplow/eleventy-plugin-cache-buster');
 
 module.exports = function (eleventyConfig) {
+  eleventyConfig.addPassthroughCopy("_content/images");
+
   eleventyConfig.addPlugin(pluginTailwindCSS, {
     src: "_includes/**/*.css",
     keepFolderStructure: false,
