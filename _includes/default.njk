@@ -6,6 +6,11 @@
     <title>{{ title + " - " if title }}{{ site.name }}</title>
     <link rel="stylesheet" href="/styles.css" />
     <link rel="alternate" type="application/atom+xml" title="" href="/feed.xml" />
+    {%- if headscripts %}
+    {%- for script in headscripts %}
+    <script src="{{ script }}" async defer></script>
+    {%- endfor %}
+    {%- endif %}
   </head>
 
   <body class="bg-gray-100 text-gray-600 dark:bg-gray-800 dark:text-gray-400">
