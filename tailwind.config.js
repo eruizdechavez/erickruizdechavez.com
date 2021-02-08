@@ -1,7 +1,12 @@
 const colors = require("tailwindcss/colors");
+const plugin = require("tailwindcss/plugin");
 
 // Info about Prose Dark (Light) Mode:
 // https://github.com/tailwindlabs/tailwindcss-typography/issues/69#issuecomment-752946920
+// tailwind.config.js
+
+// Add custom states (valid:)
+// https://github.com/tailwindlabs/tailwindcss/discussions/2465
 
 module.exports = {
   purge: ["_includes/**/*.njk", "_content/**/*.njk", "_includes/**/*.css"],
@@ -83,6 +88,17 @@ module.exports = {
     extend: {
       typography: ["dark"],
     },
+    borderColor: ({ after }) => after(["valid"]),
+    borderWidth: ({ after }) => after(["valid"]),
   },
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [
+    require("@tailwindcss/typography"),
+    plugin(function ({ addVariant, e }) {
+      addVariant("valid", ({ modifySelectors, separator }) => {
+        modifySelectors(({ className }) => {
+          return `.${e(`valid${separator}${className}`)}:valid`;
+        });
+      });
+    }),
+  ],
 };
