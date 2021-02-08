@@ -6,7 +6,7 @@
 <article>
   <header class="flex items-baseline">
     <h3>
-      {{ post.data.title }}
+      <a href="{{ post.url | url }}">{{ post.data.title }}</a>
     </h3>
     <div class="ml-4 hidden md:block">
       {% if post.data.lang === "es" %}
