@@ -1,6 +1,6 @@
 const pluginTailwindCSS = require("eleventy-plugin-tailwindcss");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
-const cacheBuster = require('@mightyplow/eleventy-plugin-cache-buster');
+const cacheBuster = require("@mightyplow/eleventy-plugin-cache-buster");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("_content/images");
@@ -16,7 +16,7 @@ module.exports = function (eleventyConfig) {
     createResourceHash() {
       return Date.now();
     },
-   // outputDirectory: "_site",
+    // outputDirectory: "_site",
   };
 
   eleventyConfig.addPlugin(cacheBuster(cacheBusterOptions));
@@ -27,9 +27,12 @@ module.exports = function (eleventyConfig) {
       month: "long",
     });
 
+    const now = Date.now();
+
     return collectionApi
       .getFilteredByGlob("**/blog/*.md")
       .reverse()
+      .filter((item) => item.date.getTime() <= now)
       .reduce((agg, item) => {
         const group = formatter.format(item.date);
 
