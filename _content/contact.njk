@@ -8,10 +8,8 @@ title: Contact
       document.querySelector('input[name="submit_time"]').value = parseInt((Date.now() - accessTime) / 1000, 10);
   }
 </script>
-<form action="https://palmiers.xyz/contact/contact.php" method="POST" class="flex flex-col" onsubmit="formSubmit()">
-  <input type="hidden" name="id" value="921ccf38-4b10-4ea2-be56-4910d226155f">
-  <input type="hidden" name="redirect" value="">
-  <script> document.querySelector('input[name="redirect"]').value = `${location.protocol}//${location.host}${location.pathname}thanks.html` </script>
+<form action="/contact/contact.php" method="POST" class="flex flex-col" onsubmit="formSubmit()">
+  <input type="hidden" name="redirect" value="/contact/thanks.html">
   <input type="hidden" name="subject" value="ERCH Contact Form">
   <input type="hidden" name="submit_time" value="0">
 
@@ -19,10 +17,6 @@ title: Contact
   <input type="text" required id="name" name="name" class="p-2 dark:bg-gray-700 dark:text-gray-200 border-2 valid:border-green-600">
   <label for="email" class="mt-4">Your email:</label>
   <input type="email" required id="email" name="from" class="p-2 dark:bg-gray-700 dark:text-gray-200 border-2 valid:border-green-600">
-
-  <label for="website" class="mt-4 hidden">Your website:</label>
-  <input type="url" id="website" name="website" class="p-2 dark:bg-gray-700 dark:text-gray-200 hidden">
-
   <label for="message" class="mt-4">Your message:</label>
   <textarea id="message" required name="message" class="h-48 p-2 dark:bg-gray-700 dark:text-gray-200 border-2 valid:border-green-600"></textarea>
   <button class="mt-4 p-2 bg-gray-600 text-gray-200 dark:bg-gray-200 dark:text-gray-600 font-bold rounded-full">Submit</button>
