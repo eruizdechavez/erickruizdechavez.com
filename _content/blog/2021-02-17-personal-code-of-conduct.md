@@ -2,6 +2,8 @@
 title: Personal Code of Conduct
 date: 2021-02-17
 tags:
+  - watercooler
+  - ethics
 ---
 
 I am a big fan of having, following, and enforcing a Code of Conduct (CoC) in all projects where I participate. If by any chance they do not have one, I always seek to collaborate with the project mantainers to adopt one that aligns properly with their values. So far I have seen great results, we all grow together, and ensure a safe and civilized space for everyone.
