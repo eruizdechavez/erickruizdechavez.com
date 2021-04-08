@@ -2,6 +2,10 @@
 title: Ephemeral Tweets
 date: 2021-04-08
 tags:
+  - watercooler
+  - privacy
+  - discuss
+  - technology
 lang: en
 ---
 
