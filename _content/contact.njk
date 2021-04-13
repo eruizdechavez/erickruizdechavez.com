@@ -8,7 +8,7 @@ title: Contact
       document.querySelector('input[name="submit_time"]').value = parseInt((Date.now() - accessTime) / 1000, 10);
   }
 </script>
-<form action="/contact/contact.php" method="POST" class="flex flex-col" onsubmit="formSubmit()">
+<form action="/_contact/contact.php" method="POST" class="flex flex-col" onsubmit="formSubmit()">
   <input type="hidden" name="redirect" value="/contact/thanks.html">
   <input type="hidden" name="subject" value="ERCH Contact Form">
   <input type="hidden" name="submit_time" value="0">
